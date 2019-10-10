@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moment 5</title>
+    <script src="https://kit.fontawesome.com/3d87e783c5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="message"></div>
+
+    <div class="backdrop"></div>
+    <div class="modal">
+        <p class="close">&times;</p>
+        <h1>Uppdatera kurs</h1>
+        <form class="update-form">
+                <div class="wrapper">
+                <div class="form-control">
+                    <label for="update-code">Kurskod</label>
+                    <input type="text" id="update-code" placeholder="Kurskod">
+                </div>
+                <div class="form-control">
+                    <label for="update-name">Kursnamn</label>
+                    <input type="text" id="update-name" placeholder="Kursnamn">
+                </div>
+                <div class="form-control">
+                    <label for="update-progression">Progression</label>
+                    <select id="update-progression">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <label for="update-curriculum">Kursplan</label>
+                    <input type="text" id="update-curriculum" placeholder="Kursplan">
+                </div>
+                </div>
+                <button id="update-btn" type="submit">Uppdatera</button>
+            </form>
+    </div>
+    <div class="container">
+        <h1>Kurser jag läst</h1>
+
+        <div class="output"></div>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Kurskod</td>
+                    <td>Kursnamn</td>
+                    <td>Progression</td>
+                    <td>Kursplan</td>
+                    <td>Uppdatera/radera</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <h1>Lägg till kurs</h1>
+        <form class="form">
+            <div class="wrapper">
+            <div class="form-control">
+                <label for="code">Kurskod</label>
+                <input type="text" id="code" placeholder="Kurskod">
+            </div>
+            <div class="form-control">
+                <label for="name">Kursnamn</label>
+                <input type="text" id="name" placeholder="Kursnamn">
+            </div>
+            <div class="form-control">
+                <label for="progression">Progression</label>
+                <select id="progression">
+                    <option value="A" selected>A</option>
+                    <option value="B">B</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label for="curriculum">Kursplan</label>
+                <input type="text" id="curriculum" placeholder="Kursplan">
+            </div>
+            </div>
+            <button type="submit">Lägg till</button>
+        </form>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
