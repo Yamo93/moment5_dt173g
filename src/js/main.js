@@ -1,5 +1,7 @@
 // Variabler
-const localURL = 'http://localhost/courses_api/api.php';
+const publicURL = 'http://localhost/courses_api/api.php';
+const publicURL = 'http://studenter.miun.se/~yage1800/dt173g/course_api/api.php';
+
 let courses = [];
 
 // Eventlyssnare
@@ -36,7 +38,7 @@ function addCourse(e) {
         syllabus
     };
 
-    fetch(localURL, {
+    fetch(publicURL, {
         method: 'post',
         body: JSON.stringify(course)
     })
@@ -82,7 +84,7 @@ function fetchCourses() {
     document.querySelector('tbody').innerHTML = '';
 
     // Hämta kurser via API:et
-    fetch(localURL, {
+    fetch(publicURL, {
         method: 'get'
     })
     .then(res => res.json())
@@ -157,7 +159,7 @@ function updateCourse(e) {
         id: updateId
     };
 
-    fetch(localURL, {
+    fetch(publicURL, {
         method: 'put',
         body: JSON.stringify(course)
     })
@@ -201,7 +203,7 @@ function updateCourse(e) {
 }
 
 function deleteCourse(id) {
-    fetch(localURL, {
+    fetch(publicURL, {
         method: 'delete',
         body: JSON.stringify({ id })
     })
