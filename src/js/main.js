@@ -101,7 +101,7 @@ function fetchCourses() {
                 <td>${course.code}</td>
                 <td>${course.name}</td>
                 <td>${course.progression}</td>
-                <td><a href="${course.syllabus}">Länk</a></td>
+                <td><a href="${course.syllabus}" target="_blank">Länk</a></td>
                 <td>
                 <i class="fas fa-edit edit-icon" onClick="openUpdateModal(${course.id})"></i>
                 <i class="fas fa-trash-alt delete-icon" onClick="deleteCourse(${course.id})"></i>
