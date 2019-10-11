@@ -89,7 +89,6 @@ function fetchCourses() {
     })
     .then(res => res.json())
     .then(data => {
-        console.log(data);
         if (data instanceof Array) {
             // Klonar arrayen
             courses = [...data];
