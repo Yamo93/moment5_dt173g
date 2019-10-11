@@ -1,5 +1,5 @@
 // Variabler
-const publicURL = 'http://localhost/courses_api/api.php';
+const localURL = 'http://localhost/courses_api/api.php';
 const publicURL = 'http://studenter.miun.se/~yage1800/dt173g/course_api/api.php';
 
 let courses = [];
